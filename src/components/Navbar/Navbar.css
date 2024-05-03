@@ -1,0 +1,25 @@
+/* Navbar.css */
+.navbar {
+    background-color: #000000 !important; /* Cambia el color de fondo de la barra de navegación */
+}
+
+.title {
+    font-weight: bold; /* Establece el peso de la fuente del título */
+    color: #000000; /* Cambia el color del texto del título */
+}
+.nav-button{
+    font-weight: bold;
+    color: #000000; /* Cambia el color del texto del botón */
+
+}
+
+/* Estilos para el botón de menú (IconButton) */
+.menu-button {
+    margin-right: 8px; /* Ajusta el margen derecho */
+}
+
+/* Estilos para los botones de navegación en pantallas medianas y grandes */
+.nav-button {
+    color: #37474F; /* Cambia el color del texto del botón */
+    margin-right: 8px; /* Ajusta el margen derecho */
+}

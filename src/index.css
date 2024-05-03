@@ -1,0 +1,41 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+:root {
+  
+  /* Definición de la paleta de colores como variables CSS */
+  --color-primary: #A75AC2;
+  --color-secondary: #6B66FF;
+  --color-tertiary: #27DBA4;
+  --color-quaternary: #43DDFF;
+  --color-quinary: #FCCD1F;
+
+  /* Fuentes y textos */
+
+
+  /* Esquema de colores y fondo */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--color-secondary);
+
+  /* Mejoras de renderizado de fuentes */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+  background-position: center;
+    font-family: "Raleway";
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Ejemplo de uso de las variables de color */
+.example {
+  color: var(--color-primary); /* Uso de la variable de color primario */
+  background-color: var(--color-secondary); /* Uso de la variable de color secundario */
+}

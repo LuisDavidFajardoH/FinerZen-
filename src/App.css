@@ -1,0 +1,25 @@
+
+
+:root {
+  /* Definición de la paleta de colores como variables CSS */
+  --color-primary: #a75ac2;
+  --color-secondary: #6b66ff;
+  --color-tertiary: #27dba4;
+  --color-quaternary: #43ddff;
+  --color-quinary: #fccd1f;
+
+  /* Fuentes y textos */
+  
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Resto de tus estilos */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  
+}
