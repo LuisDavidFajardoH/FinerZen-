@@ -13,8 +13,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/encuesta" element={<Index />} />
         </Routes>
-      </BrowserRouter>
-    
+      </BrowserRouter>   
     </ThemeProvider>
   );
 }

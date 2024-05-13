@@ -150,7 +150,7 @@ function Survey() {
   const handleNextQuestion = () => {
     // Si selectedOption.subperfil es una cadena vacía o no está definido, no hagas nada
     if (!selectedOption.subperfil) {
-      console.log("No hay opción seleccionada.");
+      
       return;
     }
 
@@ -159,7 +159,7 @@ function Survey() {
     setAnswers(newAnswers); // Actualiza el estado de answers
 
     // Imprime las respuestas actuales después de actualizarlas
-    console.log(newAnswers);
+    
 
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
@@ -189,7 +189,7 @@ function Survey() {
       if (subprofileCounts.hasOwnProperty(subperfil)) {
         subprofileCounts[subperfil] += 1;
       } else {
-        console.log(`Subperfil no reconocido: ${subperfil}`);
+        
       }
     });
 
@@ -230,12 +230,10 @@ function Survey() {
       );
     } else {
       // Si ninguna de las condiciones anteriores se cumple, manejar casos no especificados
-      console.log(
-        "No se cumplen las condiciones especificadas para los subperfiles"
-      );
+     
     }
 
-    console.log(`Resultado del perfil: ${result}`);
+    
     setProfileResult(result);
     // setState({ profileResult: result });
   };
@@ -244,7 +242,7 @@ function Survey() {
     if (profileResult) {
       // Si se ha establecido un perfil resultante, devuelve el componente correspondiente
       return (
-        console.log(profileResult), 
+        
         profileComponents[profileResult] || <div>Perfil no encontrado.</div>
       );
     } else {
