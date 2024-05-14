@@ -127,7 +127,7 @@ export default function Pacificador() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/yo9nm3" 
+              href="https://wa.link/wx2cpk" 
               target="_blank"
             >
               ¡CONOCE MÁS!

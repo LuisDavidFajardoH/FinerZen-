@@ -125,7 +125,7 @@ export default function Ambivalente() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/yo9nm3"
+              href="https://wa.link/mfh31n"
               target="_blank"
             >
               ¡CONOCE MÁS!

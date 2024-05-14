@@ -3,6 +3,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import theme from "./components/Theme/theme";
 import LandingPage from "./Pages/landing";
+import MailchimpSignup from "./Pages/register";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/registro" element={<MailchimpSignup />} />
           <Route path="/encuesta" element={<Index />} />
         </Routes>
       </BrowserRouter>   

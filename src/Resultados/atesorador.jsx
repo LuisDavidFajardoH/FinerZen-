@@ -74,7 +74,7 @@ export default function Atesorador() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/yo9nm3"
+              href="https://wa.link/iwp3t7"
               target="_blank"
             >
               ¡CONOCE MÁS!

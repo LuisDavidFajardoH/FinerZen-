@@ -127,7 +127,7 @@ export default function Codicioso() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/yo9nm3"
+              href="https://wa.link/kfunh7"
               target="_blank"
             >
               ¡CONOCE MÁS!

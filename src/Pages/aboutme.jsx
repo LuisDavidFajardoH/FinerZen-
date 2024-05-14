@@ -55,7 +55,7 @@ function AboutMe() {
             >
               {/* Asumiendo que tienes una imagen adecuada */}
               <img
-                src="/Images/fadia.webp"  // Cambia esto por tu imagen real
+                src="/Images/fadia.png"  // Cambia esto por tu imagen real
                 alt="Imagen de perfil"
                 style={{ borderRadius: '50%', width: '100%', maxWidth: '300px', height: 'auto' }}
               />

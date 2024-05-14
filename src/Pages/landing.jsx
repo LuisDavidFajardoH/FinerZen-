@@ -117,7 +117,8 @@ function LandingPage() {
           // background: '#6B66FF',
           background: 'linear-gradient(90deg, rgba(16,0,254,1) 0%, rgba(129,73,105,1) 55%, rgba(8,8,41,1) 100%);',
           '@media (max-width:600px)': {
-            background: 'linear-gradient(135deg, #7c4dff 30%, #18ffff 90%);', // Ajusta el gradiente para dispositivos pequeños
+            // background: 'linear-gradient(135deg, #7c4dff 30%, #18ffff 90%);', // Ajusta el gradiente para dispositivos pequeños
+            background: '#6b66ff',
           },
         }}
       >
@@ -154,6 +155,7 @@ function LandingPage() {
                   style={{
                     width: '100%', // Ajusta el tamaño del logo en dispositivos móviles
                     maxWidth: '250px',
+                    marginRight: '20%',
                   }}
                 />
               </Box>
@@ -163,12 +165,14 @@ function LandingPage() {
                 <Typography variant="h1" gutterBottom sx={{ color: '#cccafc' }}>
                   Reinventa tu Gestión Financiera
                 </Typography>
-                <Typography variant="body1">
-                  Con FinerZen, explora soluciones personalizadas para lograr estabilidad y satisfacción financiera.<br />
-                  <strong>Empieza a transformar tu futuro financiero hoy.</strong>
+                <Typography variant="body1" sx={{ color:'#c9bebe' }}>
+                Con FinerZen explora soluciones personalizadas y prácticas para avanzar en el camino hacia el bienestar y la prosperidad financiera.<br />
+                </Typography>
+                <Typography variant='body1' sx={{ color:'white' }}>
+                <strong>¡Conócete financieramente a través de nuestra encuesta e inicia tu transformación hoy mismo!</strong>
                 </Typography>
                 <br />
-                <Button variant="contained" color="secondary" sx={{ mt: 1, width: '100%' }} href='/encuesta'>
+                <Button variant="contained" color="secondary" sx={{ mt: 1, width: '100%' }} href='/registro'>
                   ¡Haz la encuesta ahora!
                 </Button>
               </Box>

@@ -58,7 +58,9 @@ const ContactUs = () => {
           
         </Typography>
         <Typography variant="body1" sx={{ color: theme.palette.text.primary, mb: 1 }}>
-          <FontAwesomeIcon icon={faEnvelope} /> hello@correo.com
+          <a href="mailto:Finerzen.finanzas@gmail.com" style={{ color: "white", textDecoration: 'none' }}> <FontAwesomeIcon icon={faEnvelope} />
+             ¡Enviar correo a FinerZen!
+          </a>
         </Typography>
         <Box sx={{ maxWidth: 250, mt: 2 }}>
           {/* Replace with the correct path to your image */}

@@ -48,39 +48,39 @@ const theme = createTheme({
 const testimonials = [
   {
     id: 1,
-    name: "Julia Anasta",
-    text: "Praesent a libero sit amet mi facilisis mollis vitae sed ipsum.",
-    image: "/path/to/julia.jpg",
+    name: "Life Academy",
+    text: "Gracias por este regalo que nos diste hoy.",
+    image: "/Images/life.jpeg",
   },
   {
     id: 2,
-    name: "Tom Brown",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/path/to/tom.jpg",
+    name: "Ebelyn López (Propietaria)",
+    text: "Soy bendecida por encontrar a Fadia; desde que inicié mi acompañamiento, he podido darle dirección a mi emprendimiento y a mis finanzas, enfocada y motivada a alcanzar mis metas, siempre con un objetivo claro.",
+    image: "/Images/oso.jpg",
   },
   {
     id: 3,
-    name: "Sara Conner",
-    text: "Sed sed ex eget augue euismod posuere non under moto duis.",
-    image: "/path/to/sara.jpg",
+    name: "Bost Holding",
+    text: "Gracias por el apoyo brindado en la capacitación de nuestro personal, estamos muy agradecidos por el profesionalismo y la dedicación que nos brindaron.",
+    image: "/Images/bost.jpg",
   },
   {
     id: 4,
-    name: "John Smith",
-    text: "Aenean ut eros et nisl sagittis vestibulum.",
-    image: "/path/to/johns.jpg",
+    name: "Valeria Uribe",
+    text: "Gracias por ayudarme a cambiar mi vida para mejor.",
+    image: "/Images/valeria.jpg",
   },
   {
     id: 5,
-    name: "John Smith",
-    text: "Aenean ut eros et nisl sagittis vestibulum.",
-    image: "/path/to/johns.jpg",
+    name: "Juliana Villegas",
+    text: "Fadia no sabes cuanto te agradezco, por todo, que bendición poder conocerte.",
+    image: "/Images/juliana.jpg",
   },
   {
     id: 6,
-    name: "John Smith",
-    text: "Aenean ut eros et nisl sagittis vestibulum.",
-    image: "/path/to/johns.jpg",
+    name: "Paula Montoya",
+    text: "Muchas gracias, ame en serio hablar contigo, Muchas gracias de corazón.",
+    image: "/Images/paula.jpg",
   },
 ];
 
@@ -99,8 +99,8 @@ function Testimonials() {
                   flexDirection: "column",
                   alignItems: "center",
                   backgroundColor: "background.paper",
-                  minHeight: "210px",
-                  maxHeight: "230px",
+                  minHeight: "280px",
+                  maxHeight: "280px",
                   overflow: "auto",
                 }}
               >

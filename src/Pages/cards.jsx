@@ -1,22 +1,25 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Container, Grid } from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Container, Grid, CardActionArea } from "@mui/material";
 
 function ServiceCards() {
   const services = [
     {
-      title: "Sesiones personal financiera",
-      description: "Optimiza tu relación con el dinero mediante un enfoque personalizado y práctico para mejorar tu salud financiera.",
+      title: "Consejería en finanzas personales",
+      description: "Optimiza tu relación con el dinero mediante un enfoque personalizado y práctico para mejorar tu bienestar financiero.",
       imageUrl: "/Images/personal.webp",
+      link: "https://wa.link/d506d9",
     },
     {
-      title: "Sesiones para parejas financieras",
+      title: "Consejería financiera para parejas",
       description: "Fortalece la gestión financiera en tu relación de pareja con estrategias y soluciones adaptadas a ambos.",
       imageUrl: "/Images/pareja.webp",
+      link: "https://wa.link/qgwkt9",
     },
     {
-      title: "Sesiones empresariales financieras",
-      description: "Impulsa la salud financiera de tu empresa con asesorías personalizadas para alcanzar la sostenibilidad y el crecimiento económico.",
+      title: "Consejería financiera empresarial",
+      description: "Impulsa la salud financiera de tu emprendimiento con un acompañamiento focalizado para evolucionar en la organización y la sostenibilidad económica. Potencia a tu equipo de trabajo a través de conversatorios o experiencias enfocadas en el desarrollo de habilidades en finanzas personales.",
       imageUrl: "/Images/empresas.webp",
+      link: "https://wa.link/9nrgsb",
     },
   ];
 
@@ -42,7 +45,6 @@ function ServiceCards() {
               width: '100%',
               height: '100%',
               borderRadius: 4,
-              fontFamily: 'Raleway',
               transition: 'transform 0.3s ease-in-out',
               '@media (max-width:600px)': {
                 marginRight: "300px",
@@ -55,6 +57,7 @@ function ServiceCards() {
               backgroundColor: '#1d1d1db3',
               
             }}>
+              <CardActionArea href={service.link} target="_blank">
               <CardMedia
                 component="img"
                 sx={{
@@ -81,6 +84,7 @@ function ServiceCards() {
                   {service.description}
                 </Typography>
               </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
         ))}

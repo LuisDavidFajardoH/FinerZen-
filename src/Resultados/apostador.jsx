@@ -126,7 +126,7 @@ export default function Apostador() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/yo9nm3"
+              href="https://wa.link/s80eoh"
               target="_blank"
             >
               ¡CONOCE MÁS!
