@@ -51,7 +51,7 @@ const ContactUs = () => {
           ¡Contactanos!
         </Typography>
         <Typography variant="body1" sx={{ color: theme.palette.text.primary, mb: 2 }}>
-          Agregar algo para incitar a la acción
+          Decide cambiar tu futuro financiero con la ayuda de la consejería especializada
         </Typography>
         <Typography variant="body1" sx={{ color: theme.palette.text.primary, mb: 1 }}>
             <a href="https://wa.link/yo9nm3" target="_blank" style={{ color: "white", textDecoration: 'none' }}> <FontAwesomeIcon icon={faPhone} /> +57 301116395</a>

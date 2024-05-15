@@ -70,6 +70,7 @@ const theme = createTheme({
             marginLeft: '0%',
             maxWidth: '100%',
             fontFamily: 'Raleway',
+            marginBottom: '-32%',
           },
           '@media (max-width:400px)': {
             padding: '8px 20px', // Menos padding para dispositivos pequeños
@@ -78,6 +79,7 @@ const theme = createTheme({
             marginLeft: '0%',
             maxWidth: '100%',
             fontFamily: 'Raleway',
+            marginBottom: '-32%',
           },
         },
       },

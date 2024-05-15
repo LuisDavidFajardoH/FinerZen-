@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./prueba.css";
 import { Container, Box, Typography, Tab, Tabs, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -36,20 +37,21 @@ const AboutSection = () => {
             <Box
               sx={{
                 width: {
-                  xs: "100%", // 100% width on extra-small and small screens
-                  sm: "50%", // 80% width on small screens
-                  md: "50%", // 70% width on medium screens and above
+                  xs: "60%", // 100% width on extra-small and small screens
+                  sm: "60%", // 80% width on small screens
+                  md: "70%", // 70% width on medium screens and above
                 },
                 height: "100%",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                mx: "auto",
               }}
             >
               <img
                 src="/Images/fadia.png"
                 alt="About Me"
-                style={{ maxWidth: "100%", borderRadius: "20%" }}
+                className="frame-style" // Aplica la clase aquí
               />
             </Box>
           </Grid>
@@ -104,43 +106,46 @@ const AboutSection = () => {
             </Box>
             <TabPanel value={value} index={0}>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Especialista en Gerencia de Mercadeo, Universidad Jorge Tadeo Lozano
-              <br />
-              * Profesional en Administración Financiera, Universidad del Quindío
-
+                * Especialista en Gerencia de Mercadeo, Universidad Jorge Tadeo
+                Lozano
+                <br />* Profesional en Administración Financiera, Universidad
+                del Quindío
               </Typography>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Coach Ontológico, Axon Training
+                * Coach Ontológico, Axon Training
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Mentora en Programa Internacional Finanzas e Inversión para Mamás, En Nota Colombia
+                * Mentora en Programa Internacional Finanzas e Inversión para
+                Mamás, En Nota Colombia
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Mentora en Programa Internacional Finanzas e Inversión para Mamás, En Nota Colombia
+                * Diplomado en Programación Neurolingüística, Universidad CES,
+                Training Skills
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Diplomado en Liderazgo de Alto Desempeño, Universidad CES
+                * Diplomado en Liderazgo de Alto Desempeño, Universidad CES
               </Typography>
             </TabPanel>
             <TabPanel value={value} index={2}>
               <Typography sx={{ fontFamily: "Raleway" }}>
-               * Planificación y ejecución de estrategias
+                * Planificación y ejecución de estrategias
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Análisis y planificación financiera
-              </Typography>
-              <Typography sx={{ fontFamily: "Raleway" }}>          
-              * Coaching y mentoring en el desarrollo personal y asesoramiento financiero
+                * Análisis y planificación financiera
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Comunicación efectiva, gestión de creencias limitantes y motivación
+                * Coaching y mentoring en el desarrollo personal y asesoramiento
+                financiero
               </Typography>
               <Typography sx={{ fontFamily: "Raleway" }}>
-              * Liderazgo y gestión de equipos para alcanzar objetivos
+                * Comunicación efectiva, gestión de creencias limitantes y
+                motivación
               </Typography>
-              
+              <Typography sx={{ fontFamily: "Raleway" }}>
+                * Liderazgo y gestión de equipos para alcanzar objetivos
+              </Typography>
             </TabPanel>
           </Grid>
         </Grid>

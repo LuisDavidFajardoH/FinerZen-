@@ -51,7 +51,7 @@ function Navbar() {
             {/* Estos botones solo se mostrarán en pantallas más grandes que 'sm' */}
             <IconButton
               component="a"
-              href="https://wa.link/uqp62k"
+              href="https://wa.link/yo9nm3"
               target="_blank"
               sx={{
                 color: "#A75AC2",

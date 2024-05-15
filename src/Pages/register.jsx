@@ -111,8 +111,8 @@ function RegistrationForm({ onSuccessfulRegistration }) {
                 onChange={e => setSingle(e.target.value)}
               >
                 <MenuItem value={'Soltero'}>Soltero</MenuItem>
-                <MenuItem value={'Casado'}>Casado</MenuItem>
-                <MenuItem value={'Divorciado'}>Divorciado</MenuItem>
+                <MenuItem value={'Casado'}>Convivencia</MenuItem>
+                <MenuItem value={'Divorciado'}>Separado</MenuItem>
               </Select>
               <FormHelperText>Selecciona tu estado civil</FormHelperText>
             </FormControl>

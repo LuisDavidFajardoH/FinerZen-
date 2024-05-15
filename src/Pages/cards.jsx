@@ -17,7 +17,10 @@ function ServiceCards() {
     },
     {
       title: "Consejería financiera empresarial",
-      description: "Impulsa la salud financiera de tu emprendimiento con un acompañamiento focalizado para evolucionar en la organización y la sostenibilidad económica. Potencia a tu equipo de trabajo a través de conversatorios o experiencias enfocadas en el desarrollo de habilidades en finanzas personales.",
+      description: [
+        "Impulsa la sostenibilidad financiera de tu emprendimiento con una asesoría focalizada en la organización de tu negocio.",
+        "Potencia a tu equipo a través de conversatorios enfocados en el desarrollo de habilidades en finanzas personales."
+      ],
       imageUrl: "/Images/empresas.webp",
       link: "https://wa.link/9nrgsb",
     },
@@ -25,15 +28,13 @@ function ServiceCards() {
 
   return (
     <Container sx={{
-
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       fontFamily: 'Raleway',
       '@media (max-width:600px)': {
         marginRight: "300px",
-      },
-      fontFamily: 'Raleway',
+      }
     }}>
       <Grid container spacing={4} justifyContent="center">
         {services.map(service => (
@@ -49,41 +50,42 @@ function ServiceCards() {
               '@media (max-width:600px)': {
                 marginRight: "300px",
               },
-             
               ":hover": {
                 transform: 'scale(1.05)',
                 boxShadow: '0 8px 18px 0 rgba(0,0,0,0.5)',
               },
               backgroundColor: '#1d1d1db3',
-              
             }}>
               <CardActionArea href={service.link} target="_blank">
-              <CardMedia
-                component="img"
-                sx={{
-                  height: 200,
-                  objectFit: 'cover'
-                  
-                }}
-                image={service.imageUrl}
-                alt={service.title}
-              />
-              <CardContent sx={{
-                flexGrow: 1,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                color: '#cccafc',
-                fontFamily: 'Raleway',
-                
-              }}>
-                <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Raleway'}}>
-                  {service.title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" sx={{color:'white', fontFamily: 'Raleway',}}>
-                  {service.description}
-                </Typography>
-              </CardContent>
+                <CardMedia
+                  component="img"
+                  sx={{ height: 200, objectFit: 'cover' }}
+                  image={service.imageUrl}
+                  alt={service.title}
+                />
+                <CardContent sx={{
+                  flexGrow: 1,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  color: '#cccafc',
+                  fontFamily: 'Raleway',
+                }}>
+                  <Typography gutterBottom variant="h5" component="div" sx={{fontFamily: 'Raleway'}}>
+                    {service.title}
+                  </Typography>
+                  {typeof service.description === 'string' ? (
+                    <Typography variant="body2" color="textSecondary" sx={{color:'white', fontFamily: 'Raleway',}}>
+                      {service.description}
+                    </Typography>
+                  ) : (
+                    service.description.map((part, index) => (
+                      <Typography key={index} variant="body2" color="textSecondary" sx={{color:'white', fontFamily: 'Raleway',}}>
+                        {part}{index < service.description.length - 1 && <br />}
+                      </Typography>
+                    ))
+                  )}
+                </CardContent>
               </CardActionArea>
             </Card>
           </Grid>
