@@ -126,7 +126,7 @@ export default function Angustiado() {
               variant="contained"
               color="success"
               startIcon={<WhatsAppIcon />}
-              href="https://wa.link/gvkr02"
+              href="wa.link/ai39lf"
               target="_blank"
             >
               ¡CONOCE MÁS!
