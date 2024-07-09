@@ -3,8 +3,9 @@ import { useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import Survey from "../preguntas/survey";
+import BotonWhatsapp from "../components/BotonWhatsapp/boton";
 import { Box, Typography, Button, Container, Paper } from "@mui/material";
-
+import { Helmet } from "react-helmet";
 
 function Index() {
   const [showSurvey, setShowSurvey] = useState(false);
@@ -25,6 +26,18 @@ function Index() {
 
   return (
     <div>
+      <Helmet>
+        <title>FinerZen - Prueba de Personalidad Financiera</title>
+        <meta
+          name="description"
+          content="Descubre tu personalidad financiera con la prueba de FinerZen y transforma tu relación con el dinero para mejorar tu bienestar financiero."
+        />
+        <meta
+          name="keywords"
+          content="prueba de personalidad financiera, FinerZen, autoconocimiento financiero, bienestar financiero, relación con el dinero"
+        />
+      </Helmet>
+
       <Navbar />
 
       {/* Contenedor central con el contenido */}
@@ -98,7 +111,7 @@ function Index() {
           </Button>
         </Paper>
       </Container>
-
+      <BotonWhatsapp />
       <Footer />
     </div>
   );

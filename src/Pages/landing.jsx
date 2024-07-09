@@ -9,6 +9,8 @@ import Separator from './separador';
 import Testimonials from './testimonios';
 import ContactUs from './contactme';
 import AboutSection from './prueba';
+import BotonWhatsapp from '../components/BotonWhatsapp/boton';
+import { Helmet } from 'react-helmet';
 
 
 const theme = createTheme({
@@ -108,8 +110,12 @@ const theme = createTheme({
 function LandingPage() {
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>FinerZen - Reinventa tu Gestión Financiera</title>
+        <meta name="description" content="Con FinerZen explora soluciones personalizadas y prácticas para avanzar en el camino hacia el bienestar y la prosperidad financiera." />
+        <meta name="keywords" content="gestión financiera, soluciones personalizadas, bienestar financiero, prosperidad financiera, FinerZen, finerzen, FinerZen" />
+      </Helmet>
       <Navbar />
-
       <Box sx={{
           display: 'flex',
           flexDirection: 'column',  
@@ -189,7 +195,7 @@ function LandingPage() {
         <Separator text="Testimonios" />
         <Testimonials />
         <ContactUs />
-
+        <BotonWhatsapp />
         <Footer />
       </Box>
     </ThemeProvider>
